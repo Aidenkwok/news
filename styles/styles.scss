@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Open+Sans');
+
+h1,h2,h3,h4,h5,h6, button{
+  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
+}
+
+.container{
+  height:100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #141414;
+}
+
+#article{
+  width:100vw;
+  height:100vh;
+  background-color: white;
+  position: absolute;
+  top:0;
+  z-index: 10;
+}
+
+#headline{
+  color:black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin:1em;
+}
+
+
+button{
+  // margin: 2em;
+  background-color: transparent !important;
+  // height:5em;
+  // width: 5em;
+  // padding: 0;
+}
+
+
+#read{
+  color:#2ecc71;
+  transition: 0.2s ease;
+  &:hover{
+    color:lighten(#2ecc71,25%);
+  }
+  &:active{
+    color:darken(#2ecc71,10%);
+  }
+}
+
+#get{
+  color:#e74c3c;
+  transition: 0.2s ease;
+  &:hover{
+    color:lighten(#e74c3c,25%);
+  }
+  &:active{
+    color:darken(#e74c3c,10%);
+  }
+}
+
+#back{
+  color:#ecf0f1;
+}
+
+#screen{
+  border: 2px black solid;
+  width: 20em;
+  height:28em;
+  border-radius: 0.6em;
+  overflow: hidden;
+  background-color: white;
+}
+
+#headlineArea{
+  height:7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imgDiv{
+  height:13em;
+  width:100%;
+  overflow: hidden;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.buttonRow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#showResults{
+  background-color: transparent;
+}
+
+#selectedHeadlinesDiv{
+  height:100vh;
+  width: 100vw;
+  background-color: white;
+  position: absolute;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #selectedHeadlines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a{
+      color:black;
+      font-size: 1.5em;
+      margin:0.3em;
+      font-weight: bold;
+      transition: 0.2s ease;
+      text-align: center;
+      &:hover{
+        color:blue;
+        transition: 0.2s ease;
+      }
+      &:active{
+        color:darken(blue,10%);
+        transition: 0.2s ease;
+      }
+    }
+  }
+}
+
+.disabled{
+  color:transparent !important;
+}
+
+#intro{
+  background-color:#141414 ;
+  height:100vh;
+  width:100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  font-style: italic;
+  button{
+    text-transform: uppercase;
+    font-size:2em;
+  }
+}
+
+#back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    margin:0;
+    margin-left: 0.4em;
+  }
+}

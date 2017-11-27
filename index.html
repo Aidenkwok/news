@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>News</title>
+
+  <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/animate.css/animate.css
+  ">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div id="screen" class ="animated">
+      <div id="imgDiv">
+        <img id="imgUrl" src="" alt="">
+      </div>
+      <div id="headlineArea">
+        <p id ="headline"></p>
+      </div>
+      <div class="buttonRow">
+
+        <button id="read"><i class="fa fa-check fa-3x" aria-hidden="true"></i></button>
+
+        <button id="get"><i class="fa fa-times fa-3x" aria-hidden="true"></i></button>
+
+      </div>
+    </div>
+
+    <button id="showResults">Show Results</button>
+  </div>
+
+  <div id="selectedHeadlinesDiv">
+    <button id="back"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i><p> Back</p></button>
+    <div id="selectedHeadlines">
+    </div>
+  </div>
+
+  <div id="intro">
+    <button>Currated News</button>
+  </div>
+
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<sciprt src="../bower_components/foundation/js/foundation.js"></sciprt>
+<script src = "js/script.js"></script>
+</body>
+</html>
